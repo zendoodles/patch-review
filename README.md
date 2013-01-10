@@ -1,4 +1,4 @@
 patch-review
 ============
 
-The patch review presentation and all
+The patch review presentation and resources.
