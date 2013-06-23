@@ -1,27 +1,142 @@
-Code Reviews: Move projects forward without pissing people off
-Code Reviews: doing little ones to doing big ones without losing your mind or your friends
-Strategies for code reviews that improve the quality of future proposed solutions
-Code Review for Quality: applicable in organizations, contrib, and core
-Code Review: All the cool kids are doin’ it!
+put code review in context
 
-In this session, we'll look at the process of patch review from start to finish, discussing strategies to maximize learning opportunities, touching on why some patches are harder to review than others, and helping attendees gain confidence in promoting issues from “Needs Review” to "RTBC" (or providing appropriate feedback on code not yet ready for consumption).
+full frontal nicety
+someone's first patch
+encourage
 
-Each patch represents a personal investment by the developer. It takes time to consider a problem, craft a solution, roll the patch, and upload it to an issue queue. All too often, some of these patches slip through the cracks and go unreviewed for months or even years.
+be specific
+include links to standards or other docs
+support improvement
+ask questions
+opportunity to educate
 
-Even though it may fix bugs, improve the UI, or add better documentation, each patch must be thoroughly reviewed before it can be committed. An imperfect patch, which may not be ready to commit yet, still represents an opportunity to educate contributors about coding style, core gates, and/or the process itself.
+does it work
+fixes the issue
+ (and not other issues, not break other stuff, bot)
+does not stray from scope
+ (unrelated fixes for coding standards
+does not introduce regressions
 
-This session is intended for developers, module maintainers, and project managers with a programming background who want to learn to write reviews for patches, new project applications, or custom code internal to their organization.
+does it make sense
+readable
+comments
+is there a better way?
+ (can we re-use api's instead of create custom code)
+ have you thought of doing it ... this way?
+ a question is a nice way to bring up the topic.
 
+Core gates
+ documentation
+ performance
+ accessibility
+ usability
+ testing
+http://drupal.org/core-gates
+allows scalability, and grown of number of contributors
+for example in docs, outlines minimal, nits not block core commits.
 
-From Sydney
-In this session, we'll look at the process of patch review from start to finish, discussing strategies to maximize learning opportunities, touching on why some patches are harder to review than others, and helping attendees gain confidence in promoting issues from “Needs Review” to "RTBC" (or providing appropriate feedback on patches not yet ready for consumption).
-Each patch represents a personal investment by the developer. It takes time to consider a problem, craft a solution, roll the patch, and upload it to an issue queue. All too often, some of these patches slip through the cracks and go unreviewed for months or even years.
-Even though it may fix bugs, improve the UI, or add better documentation, each patch must be thoroughly reviewed before it can be commited. An imperfect patch, which may not be ready to commit yet, still represents an opportunity to educate contributors about coding style, core gates, and/or the process itself.
-This session is intended for developers, module maintainers, and project managers with a programming background who want to learn to write reviews for patches, new project applications, and/or custom code.
-Portland
-In this session, we'll look at the process of patch review from start to finish, discussing strategies to maximize learning opportunities, touching on why some patches are harder to review than others, and helping attendees gain confidence in promoting issues from “Needs Review” to "RTBC" (or providing appropriate feedback on patches not yet ready for consumption).
-Each patch represents a personal investment by the developer. It takes time to consider a problem, craft a solution, roll the patch, and upload it to an issue queue. All too often, some of these patches slip through the cracks and go unreviewed for months or even years.
-Even though it may fix bugs, improve the UI, or add better documentation, each patch must be thoroughly reviewed before it can be commited. An imperfect patch, which may not be ready to commit yet, still represents an opportunity to educate contributors about coding style, core gates, and/or the process itself.
-This session is intended for developers, module maintainers, and project managers with a programming background who want to learn to write reviews for patches, new project applications, and/or custom code.
+documentation
+ issue summary, place to put some info from core gates review
+ takes time, really rewarding, saves other patch contributors, reviews, committers time!
+ in-code API docs (1354), read, then use to identify blocking concerns, let others go (or provide your own patch to fix up non-blocking (show putting on dashboard) api.drupal.org, and ides (like phpstorm)
+ module.api.php? core-gates says when
+ hook_help() adding a new module: ET
+ change records, for api changes
+ http://drupal.org/list-changes/drupal (listed here because helps to be familiar to identify needs work, and reference CR)
 
+Performance
+ read the core gate, document
+ profile, yourself or mark it needs profiling with tag and contributor task
+ [fill in detail?] sql queries, caches, memory usage, cpu, system calls, front-end
+ contributor task for profiling
+
+Accessibilitiy
+ it's a bug
+ conforms to WCAG 2.0
+ ATAG 2.0
+ run a tool that gives output
+ text color contrast
+ form fields are labeled
+ keyboard-usable (javascript)
+
+Usability
+ UI changes undergo usability review.
+ acknowlege a change in the UI, tag usabilty, for hard things: needs usability review
+ provide before and after screenshots
+
+Testing
+ check test coverage & ensure tests pass
+ ask for add new tests
+ verify uploaded a test case that fails (for bugs)
+ pink green
+ manually test and provide screenshots
+ watch for tests being changed, ask why
+ fix bug and prove test coverage, so bug does not sneek in next time.
+ steps are given to manually test javascript (there are not yet automated tests for javascript)
+
+Coding Style
+ no tabs or trailing white space, 2 spaces, no tabs
+ link
+ docs style
+ 1354
+
+Tools
+ Dreditor -demo
+ IDE (phpstorm) -demo
+ PHP Lint (php -l) -demo
+  -JSLint
+  -csslint
+ Coder Module, Code sniffer, Grammar Parser Module (not ready for d8)
+
+Strategy, too much to review!
+ in your comment, say what you reviewed and how (tool used, steps)
+ update the issue summary to say what kind of review was done and the comment number
+
+You cannot un-read the issue, sometimes read the patch first to see if it makes sense
+Perfect is the enemy of good ... for nits, just fix the nits, do review separate
+You will find a process you like, these demos give a starting point and inspiration
+
+workflow.
+ most recent patch
+ tests only patch?
+ interdiffs
+
+Dreditor, does lots like... 
+also makes d.o much eaiser to use, and do reviews
+
+dreditor review button
+diff stat
+scroll, files and functions
+inserted lines in blue
+deleted red
+comments green
+if bug or new functionality check for added tests
+double click to select lines
+opens box to type comments
+save
+paste
+
+interdiffs - check if previous concerns are now addressed, or if some are outstanding still
+
+read once, fix simple
+read again for scope
+read again for making sense
+
+sometimes see code in context, apply the patch, then open IDE next to the patch/dreditor
+unused variables
+depreciated api
+
+test manually - module length
+
+how to get reviews!
+ update the talk description, include how to get review bit from portland
+
+Resources
+ community tools. drupalize.me, ladder
+
+call to action: Next
+ get practice by attending core office hours, being a mentor
+ #drupal-contribute
+
+= next presenation change to code review... not patch review, more general
 
