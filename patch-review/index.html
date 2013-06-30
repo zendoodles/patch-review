@@ -14,7 +14,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
 		<!-- For syntax highlighting -->
@@ -38,298 +38,438 @@
 			<div class="slides">
 
 				<section>
-					<h1>Upgrading Modules to Drupal 8</h1>
-					<h3>Getting contrib ready!</h3>
+					<h1>Doing and Getting Patch Reviews</h1>
 					<p>
-						<small>Created by ZenDoodles</small>
+						<small>Thanks ZenDoodles and xjm</small>
 					</p>
 				</section>
 
 				<section>
-                    <h1>ZenDoodles</h1>
-					<h3>Who the heck am I?</h3>
+                    <h1>YesCT</h1>
+					<h3>Cathy Theys</h3>
 					<p>
-						Say some stuff about ourselves here probably.
+						I review patches, mostly for core these days
 					</p>
-                    <video  height="400" controls autoplay>
-                        <source src="a2.mp4" type="video/mp4">
-                        Your browser does not support video
-                    </video>
+
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+                        I review patches, mostly for core these days.
+                        I used to only know how to took for one or two common patterns of mistakes in code,
+                        but the more reviews I do, the more I learn how to do more kinds of reviews.
+                        I learn a lot by doing a review, and then watching what feedback others leave
+                        of the same issue.
+                        I also learn how to do reviews by writing patches, and seeing what feedback I get.
+ 					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+                <section>
+                    <img width="65%" src="how.png" alt="screen capture of end of how improvements are made, which shows back and forth between needs review and needs work.">
+                    <p><a href="http://tinyurl.com/webchick-how">http://tinyurl.com/webchick-how</a></p>
+                    <p>(http://www.youtube.com/watch?&v=OCxhoho82Qo&t=12m57s)</p>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+                    <aside class="notes">
+                        Reviews are central to how improvements get in.
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+                        This is webchicks good talk.
+                        Tiny url to talk.
+                    </aside>
+                </section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+                <section>
+                    <img width="75%" src="needreview1309.png" alt="pie chart showing 1309 issues need review, 18%">
+                    <aside class="notes">
+                        1309, 18%
+                    </aside>
+                </section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+                <section>
+                    <h2>Full frontal nicety</h2>
+                    <aside class="notes">
+                        it could be someone's first patch
+                        encourage
+                        support the person who made the patch
+                        and also anyone following the issue or who might come upon the issue in the future
+                    </aside>
+                </section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+                <section>
+                    <ul>
+                    <h2>Supportive</h2>
+                        <li>specific</li>
+                        <li>include links</li>
+                        <li>support improvement</li>
+                        <li>ask questions</li>
+                        <li>educate</li>
+                    </ul>
+                    <aside class="notes">
+                        be specific
+                        include links to standards or other docs
+                        support improvement
+                        ask questions
+                        opportunity to educate
+                    </aside>
+                </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                <section>
+                    <h2>Does it work?</h2>
+                    <ul>
+                    <li>fixes the issue</li>
+                    <li>stays in scope</li>
+                    <li>no regressions</li>
+                    </ul>
+                    <aside class="notes">
+                        fixes the issue
+                        (and not other issues, not break other stuff, bot)
+                        does not stray from scope
+                        (unrelated fixes for coding standards
+                        does not introduce regressions
+                    </aside>
+                </section>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+                <section>
+                    <h2>Does it make sense?</h2>
+                    <ul>
+                        <li>readable?</li>
+                        <li>comments?</li>
+                        <li>is there a better way?</li>
+                    </ul>
+                    <aside class="notes">
+                        (can we re-use api's instead of create custom code)
+                        have you thought of doing it ... this way?
+                        a question is a nice way to bring up the topic.
+                    </aside>
+                </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+                <section>
+                    <h2>Dreditor</h2>
+                    <img width="100%" src="slash-project.png">
+                    <p>http://drupal.org/project/dreditor</p>
+                </section>
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+                <section>
+                    <img width="55%" src="dreditorproject.png">
+                </section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+                <section>
+                    <img width="150%" src="chromesave.png">
+                </section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> -
-						<a href="?#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+                <section>
+                    <img width="120%" src="drag.png">
+                    <aside class="notes">
+                        verify vids, write results, manual testing (mp4), simple code review
+                    </aside>
+                </section>
 
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-						</a>
-					</section>
-				</section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+                <section>
+                    <img width="120%" src="dreditor-stat.png">
+                    <aside class="notes">
+                        dreditor review button
+                        diff stat
+                        scroll, files and functions
+                        inserted lines in blue
+                        deleted red
+                        comments green
+                        if bug or new functionality check for added tests
+                        double click to select lines
+                        opens box to type comments
+                        save
+                        paste
+                    </aside>
+                </section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+                <section>
+                    <h3>Strategy</h3>
+                    <h4>Scale</h4>
+                    <ul>
+                        <li>say what</li>
+                        <li>say how</li>
+                    </ul>
+                    <p></p>
+                    <h4>Kinds of reviews</h4>
+                    <ul>
+                        <li>update the issue summary</li>
+                    </ul>
+                    <aside class="notes">
+                        Too much to review!
+                        in your comment, say what you reviewed and how (tool used, steps)
+                        (scales, because with documented steps to reviewing an issue, others can come by the issue and help review it if you get too busy.)
+                        update the issue summary to say what kind of review was done and the comment number
+                    </aside>
+                </section>
 
-    var nodes = document.querySelectorAll( selector );
+                <section>
+                    <h2>Process</h2>
+                    <ul>
+                        <li>cannot unread</li>
+                        <li>perfect is enemy of good</li>
+                    </ul>
+                    <aside class="notes">
+                        You cannot un-read the issue, sometimes read the patch first to see if it makes sense
+                        Perfect is the enemy of good ... for nits, just fix the nits, do review separate
+                        You will find a process you like, these demos give a starting point and inspiration
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+                    </aside>
+                </section>
 
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+                <section>
+                    <h2>Core gates</h2>
+                        <ul>
+                        <li>documentation</li>
+                        <li>performance</li>
+                        <li>accessibility</li>
+                        <li>usability</li>
+                        <li>testing</li>
+                            </ul>
+                        <h3></h3>http://drupal.org/core-gates</h3>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+                    <aside class="notes">
+                        for example in docs, outlines minimal, nits not block core commits.
+                    </aside>
+                </section>
 
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+                <section>
+                    <h3>documentation</h3>
+                    <ul>
+                        <li>issue summary</li>
+                        <li>time</li>
+                        <li>in-code API docs (1354)</li>
+                        <li>hook_help()</li>
+                        <li>change records</li>
+                    </ul>
+                    <p>http://drupal.org/list-changes/drupal</p>
+                    <aside class="notes">
+                        issue summary, place to put some info from core gates review
+                        takes time, really rewarding, saves other patch contributors, reviews, committers time!
+                        in-code API docs (1354), read, then use to identify blocking concerns, let others go (or provide your own patch to fix up non-blocking) (show putting on dashboard) api.drupal.org, and ides (like phpstorm)
+                        module.api.php? core-gates says when
+                        hook_help() adding a new module: ET
+                        change records, for api changes
+                        http://drupal.org/list-changes/drupal (listed here because helps to be familiar to identify needs work, and reference CR)
+                    </aside>
+                </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+                <section>
+                    <img width="70%" src="min.png">
+                </section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+                <section>
+                    <h2>Performance</h2>
+                    <ul>
+                        <li>Don't guess</li>
+                        <li>profile!</li>
+                    </ul>
+                    <aside class="notes">
+                        read the core gate, document, don't guess
+                        profile, yourself or mark it needs profiling with tag and contributor task
+                        [fill in detail?] sql queries, caches, memory usage, cpu, system calls, front-end
+                        contributor task for profiling
+                    </aside>
+                </section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+                <section>
+                    <h2>Accessibility</h2>
+                    <ul>
+                    <li> bug</li>
+                    <li>                    WCAG</li>
+                    <li>                    ATAG</li>
+                    <li>                    text color contrast</li>
+                    <li>                    form fields are labeled</li>
+                    <li>                    keyboard-usable (javascript)</li>
+                        </ul>
+                    <aside class="notes">
+                        it's a bug
+                        conforms to WCAG 2.0
+                        ATAG 2.0
+                        run a tool that gives output
+                        text color contrast
+                        form fields are labeled
+                        keyboard-usable (javascript)
+                     </aside>
+                </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+                <section>
+                    <h2>Usability</h2>
+                    <ul>
+                        <li>UI changes need usability review</li>
+                        <li>before and after screenshots</li>
+                    </ul>
+                    <aside class="notes">
+                        UI changes undergo usability review.
+                        provide before and after screenshots
+                        acknowlege a change in the UI, tag usabilty, for hard things: needs usability review
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Testing</h2>
+                    <ul>
+                        <li>check coverage</li>
+                        <li>ask for new tests</li>
+                        <li>verify tests-only fails</li>
+                    </ul>
+                    <aside class="notes">
+                        check test coverage & ensure tests pass
+                        ask for add new tests
+                        verify uploaded a test case that fails (for bugs)
+                        pink green
+                        manually test and provide screenshots
+                        watch for tests being changed, ask why
+                        fix bug and prove test coverage, so bug does not sneek in next time.
+                        steps are given to manually test javascript (there are not yet automated tests for javascript)
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Coding Style</h2>
+                    <ul>
+                        <li>no tabs, trailing</li>
+                        <li>1354</li>
+                        <li>link! to docs</li>
+                    </ul>
+                    <aside class="notes">
+                        no tabs or trailing white space, 2 spaces, no tabs
+                        link
+                        docs style
+                        1354
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>interdiffs</h3>
+                    <ul>
+                        <li>concerns?</li>
+                        <li>addressed?</li>
+                    </ul>
+                    <img width="70%" src="interdiff.png">
+                    <aside class="notes">
+                        check if previous concerns are now addressed, or if some are outstanding still
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>read, read, read</h2>
+                    <ul>
+                        <li>fix simple</li>
+                        <li>for scope</li>
+                        <li>for understanding</li>
+                    </ul>
+                    <aside class="notes">
+                        read once, fix simple
+                        read again for scope
+                        read again for making sense
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>IDE</h2>
+                    <img width="100%" src="ide.png">
+                    <aside class="notes">
+                        PhpStorm
+                        sometimes see code in context, apply the patch, then open IDE next to the patch/dreditor
+                        unused variables
+                        depreciated api
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Find issues to review</h2>
+                    <ul>
+                        <li>first simple! success!</li>
+                        <li>novice?</li>
+                        <li>initiatives</li>
+                        <li>metas?</li>
+                        <li>focus?</li>
+                    </ul>
+                    <aside class="notes">
+                        novice
+                        initiatives
+                        tags
+                        metas
+                        focus boards
+                        get asked to do a review
+                        offer to trade reviews
+                        look for reviews that have up to date issue summaries
+                        steps to reproduce
+                    </aside>
+                </section>
+
+                <section>
+                    <img width="50%" src="novice.png">
+                </section>
+
+
+                <section>
+                    <img width="100%" src="active-core.png">
+                </section>
+
+
+                <section>
+                    <img width="100%" src="work-d8mi-all.png">
+                </section>
+
+
+                <section>
+                    <img width="100%" src="tags.png">
+                </section>
+
+
+                <section>
+                    <img width="100%" src="other-tags.png">
+                </section>
+
+
+                <section>
+                    <img width="100%" src="focus.png">
+                </section>
+
+
+                <section>
+                    <img width="100%" src="irc-focus.png">
+                </section>
+
+
+                <section>
+                    <img width="100%" src="empire.png">
+                </section>
+
+
+                <section>
+                    <h3>Resources</h3>
+                        <p>drupalize.me/guides/drupal-community-tools-and-core-mentoring</p>
+                        <img width="800%" src="tools.png">
+
+                </section>
+
+                <section>
+                    <h3>Resources</h3>
+                        <p>drupalladder.org/</p>
+                    <img width="60%" src="ladder.png">
+
+                </section>
+
+                <section>
+                    <h2>Action</h2>
+                    <ul>
+                        <li>sprint!</li>
+                        <li>drupal mentoring office hours</li>
+                        <li>#drupal-contribute</li>
+                    </ul>
+                    <aside class="notes">
+                        novice
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h1>Thanks!</h1>
+                </section>
+
+
 
 			</div>
 
@@ -343,6 +483,8 @@ function linkify( selector ) {
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+                width:   '90%',
+                height:  '90%',
 				controls: true,
 				progress: true,
 				history: true,

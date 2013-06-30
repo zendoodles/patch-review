@@ -29,7 +29,7 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 600%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -80,10 +80,10 @@ body {
 	word-wrap: break-word;
 }
 
-.reveal h1 { font-size: 3.77em; }
-.reveal h2 { font-size: 2.11em;	}
-.reveal h3 { font-size: 1.55em;	}
-.reveal h4 { font-size: 1em;	}
+.reveal h1 { font-size: 4.77em; }
+.reveal h2 { font-size: 4.11em;	}
+.reveal h3 { font-size: 3.55em;	}
+.reveal h4 { font-size: 2em;	}
 
 
 /*********************************************
@@ -579,7 +579,6 @@ body {
 	display: none;
 	position: absolute;
 	width: 100%;
-	padding: 20px 0px;
 
 	z-index: 10;
 	line-height: 1.2em;
@@ -1367,4 +1366,9 @@ body {
 	visibility: hidden;
 }
 
+
+.reveal li {
+  font-size: 200%;
+  line-height: 135%;
+}
 

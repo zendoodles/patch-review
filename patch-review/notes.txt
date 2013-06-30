@@ -25,6 +25,28 @@ is there a better way?
  have you thought of doing it ... this way?
  a question is a nice way to bring up the topic.
 
+Tools
+ Dreditor -demo
+ IDE (phpstorm) -demo
+ PHP Lint (php -l) -demo
+  -JSLint
+  -csslint
+ Coder Module, Code sniffer, Grammar Parser Module (not ready for d8)
+
+Strategy, too much to review!
+ in your comment, say what you reviewed and how (tool used, steps)
+ (scales, because with documented steps to reviewing an issue, others can come by the issue and help review it if you get too busy.)
+ update the issue summary to say what kind of review was done and the comment number
+
+You cannot un-read the issue, sometimes read the patch first to see if it makes sense
+Perfect is the enemy of good ... for nits, just fix the nits, do review separate
+You will find a process you like, these demos give a starting point and inspiration
+
+workflow.
+ most recent patch
+ tests only patch?
+ interdiffs
+
 Core gates
  documentation
  performance
@@ -44,8 +66,23 @@ documentation
  change records, for api changes
  http://drupal.org/list-changes/drupal (listed here because helps to be familiar to identify needs work, and reference CR)
 
+Dreditor, does lots like... 
+also makes d.o much eaiser to use, and do reviews
+
+dreditor review button
+diff stat
+scroll, files and functions
+inserted lines in blue
+deleted red
+comments green
+if bug or new functionality check for added tests
+double click to select lines
+opens box to type comments
+save
+paste
+
 Performance
- read the core gate, document
+ read the core gate, document, don't guess
  profile, yourself or mark it needs profiling with tag and contributor task
  [fill in detail?] sql queries, caches, memory usage, cpu, system calls, front-end
  contributor task for profiling
@@ -61,8 +98,8 @@ Accessibilitiy
 
 Usability
  UI changes undergo usability review.
- acknowlege a change in the UI, tag usabilty, for hard things: needs usability review
  provide before and after screenshots
+ acknowlege a change in the UI, tag usabilty, for hard things: needs usability review
 
 Testing
  check test coverage & ensure tests pass
@@ -79,42 +116,6 @@ Coding Style
  link
  docs style
  1354
-
-Tools
- Dreditor -demo
- IDE (phpstorm) -demo
- PHP Lint (php -l) -demo
-  -JSLint
-  -csslint
- Coder Module, Code sniffer, Grammar Parser Module (not ready for d8)
-
-Strategy, too much to review!
- in your comment, say what you reviewed and how (tool used, steps)
- update the issue summary to say what kind of review was done and the comment number
-
-You cannot un-read the issue, sometimes read the patch first to see if it makes sense
-Perfect is the enemy of good ... for nits, just fix the nits, do review separate
-You will find a process you like, these demos give a starting point and inspiration
-
-workflow.
- most recent patch
- tests only patch?
- interdiffs
-
-Dreditor, does lots like... 
-also makes d.o much eaiser to use, and do reviews
-
-dreditor review button
-diff stat
-scroll, files and functions
-inserted lines in blue
-deleted red
-comments green
-if bug or new functionality check for added tests
-double click to select lines
-opens box to type comments
-save
-paste
 
 interdiffs - check if previous concerns are now addressed, or if some are outstanding still
 
