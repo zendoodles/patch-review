@@ -22,6 +22,21 @@ body {
 	background: $selectionBackgroundColor;
 	text-shadow: none;
 }
+/*********************************************
+ * BACKGROUND
+ *********************************************/
+body:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 228px;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-image: url('../images/druplicon.green.png');
+}
 
 /*********************************************
  * HEADERS
@@ -42,6 +57,7 @@ body {
 
 	text-transform: $headingTextTransform;
 	text-shadow: $headingTextShadow;
+  font-weight: bold;
 }
 
 .reveal h1 {

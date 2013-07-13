@@ -1,9 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
- * Drupal core mentoring theme for reveal.js.
- */
-/**
- * Fonts for the Drupal Core Mentoring theme for reveal.js presentations.
+ * Beige theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @font-face {
   font-family: 'League Gothic';
@@ -30,27 +29,12 @@ body {
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: #018f35; }
+  color: #333333; }
 
 ::selection {
   color: white;
   background: rgba(79, 64, 28, 0.99);
   text-shadow: none; }
-
-/*********************************************
- * BACKGROUND
- *********************************************/
-body:after {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 228px;
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-image: url("../images/druplicon.green.png"); }
 
 /*********************************************
  * HEADERS
@@ -62,13 +46,12 @@ body:after {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #018f35;
-  font-family: "Merriweather Sans", sans-serif;
+  color: #333333;
+  font-family: "League Gothic", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
-  text-transform: inherit;
-  text-shadow: none;
-  font-weight: bold; }
+  text-transform: uppercase;
+  text-shadow: none; }
 
 .reveal h1 {
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
@@ -100,7 +83,7 @@ body:after {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #018f35;
+  border: 4px solid #333333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
