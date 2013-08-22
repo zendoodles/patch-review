@@ -1,0 +1,6 @@
+Notes for reviewers
+Patches for bugfixes should be uploaded with a test-only patch followed by a combined test + fix patch.
+Updates to earlier patches should be accompanied by an interdiff.
+Review the patch in terms of the core gates.
+See xjm's patch review checklist.
+Your review should be constructive and encouraging.

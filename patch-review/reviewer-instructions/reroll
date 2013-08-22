@@ -1,0 +1,6 @@
+Notes for reviewers
+The reroll should apply and pass tests.
+Make sure the participant rerolled the most recent patch.
+Check the diffstat to see if the number of additions, deletions, and changed files is the same. (If they're different, look for why.)
+Check to make sure all the hunks from the earlier patch are there.
+Keep an eye out for unrelated changes that might have accidentally been rolled in.

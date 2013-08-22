@@ -1,0 +1,5 @@
+Notes for reviewers
+The patch should be accompanied by an interdiff.
+Check specifically for compliance with documentation and coding standards.
+Comments should use clear, complete English sentences.
+The participant is only responsible for documentation and code style. If you choose to review the full patch, separate other feedback from feedback on the cleanups.
