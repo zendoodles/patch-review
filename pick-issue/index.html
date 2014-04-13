@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Patch Review</title>
+		<title>Pick Issue</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -38,7 +38,8 @@
 			<div class="slides">
 
 				<section>
-					<h1>Patch Reviews</h1>
+					<h3>Picking Issues to work on</h3>
+                    <h4>aka: I want to help. I don't know what to do!</h4>
 					<p><small>Thanks ZenDoodles and xjm</small></p>
 				</section>
 
@@ -46,9 +47,8 @@
                     <h1>YesCT</h1>
 					<h3>Cathy Theys</h3>
                     <h4>@YesCT</h4>
-                    <h4>Cheppers, Gittip</h4>
-                    <p>I review patches, mostly for core these days.</p>
-                    <p>And do other stuff like plan sprints and mentor.</p>
+                    <h4>Cheppers, Breakthrough Technologies, Gittip</h4>
+                    <p>I mentor, plan sprints, review patches, mostly for core these days.</p>
 
 					<aside class="notes">
                         <p>I'm</p>
@@ -82,129 +82,28 @@
                 </section>
 
                 <section>
-                    <h2>Getting patch reviews</h2>
-                    <h4>Also: how to find reviews</h4>
-                </section>
-
-                <section>
-                    <h2>Be specific,</h2><h2>what kind of review?</h2>
-                    <aside class="notes">
-                        <p>Patch producer:
-                        <p>In the comment when posting the patch
-                        <p>“this patch is just to demonstrate the approach, it is not ready for a code review. Please try it manually to see if it works and also give feedback on the architecture.”
-                        <p>“this patch is ready for testing, code review and accessibility testing”
-                        <p>“this patch is ready for testing, be sure to test in both IE and safari”
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Use tags</h2>
-                    <ul>
-                        <li>needs JavaScript review</li>
-                        <li>needs architectural review,
-                        <li>needs usability review,
-                        <li>needs manual testing,
-                        <li>needs screenshot
-                    </ul>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-                <section>
-                    <h4>Up-to-date Issue Summary</h4>
-                    <p>https://drupal.org/contributor-tasks/write-issue-summary</p>
-                    <img height="100%" src="template.png" alt="dreditor summary template insert button, and issue summary instructions link">
-                    <aside class="notes">
-                        <p>when posting patch, update summary.
-                        <p>Include: steps to test/ steps to reproduce. It should be a numbered list that starts with:
-                        <p>Install drupal8/7/..
-                        <p>get others to do work for you, add the needs issue summary update tag
-                        <p>needs steps to reproduce tag
-                        <p>add a section or update the "remaining tasks" section
-                    </aside>
-                </section>
-
-                <section>
-                    <img height="100%" src="contributortasklinks.png" alt="mock up of needs tags linked in context with top of issue">
-                    <aside class="notes">
-                        <p>So, imagine someone is looking for an issue to review,
-                        <p>they find yours,
-                        <p>it says needs manual testing.
-                        <p>If the issue summary is accurate, and you have steps to reproduce.
-                        <p>Yay! your potential reviewer has not run away yet!
-
-                        <p>Instructions for how to do the review you need will keep them there.
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Automatic instructions</h2>
-                    <p>work in progress at</p>
-                    <p>https://drupal.org/node/2013222</p>
-                </section>
-
-                <section>
-                    <h2>Contributor task documents</h2>
-                    <p>http://drupal.org/contributor-tasks/review</p>
-                    <p>http://drupal.org/contributor-tasks/do-accessibility-review</p>
-                    <aside class="notes">
-                        <p>Keep them there by....
-                        <p>adding a link to the contributor task document that has instructions for the reviewer, so they will know how to do a good review.
-
-                        <p>Now your reviewer that found your issue will have the resources they need to
-                        <p>succeed at doing the review!
-                        <p>And they’ll do a great review too!
-                        <p>the contributor task documents for how to do a review will get meaningful actionable feedback on the patch.
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Metas</h2>
-                    <img height="100%" src="hints.png" alt="screenshot of an example issue, 2002650,  with hints">
-                    <aside class="notes">
-                        <p>Some times, a whole bunch of related issues have special review instructions.
-                        <p>Like the all the schema, unused var issues. So for ones like that, make a meta to list them all to make it easy to find another once someone reviews one. Also, in the meta, put detailed insructions for what to review and how to review it, link to an example of a good review in one of the issue if one is done already. It’s like summoning any army of reviews to tackle a challenging new task. But once they do it, they can be on a mission and do it over and over.
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>simplytest.me url</h2>
-                    <h4>pattern is:</h4><h3>/project/drupal/8.x?patch[]=</h3>
-                    <p>http://simplytest.me/qa#developers</p>
-                    <aside class="notes">
-                        <p>this is really nice for accessibility testing, because those testers may not have dreditor installed where they are doing the testing, so they dont have the simplytest.me button on d.o like you might have.
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Give good reviews</h2>
-                    <aside class="notes">
-                        <p>the more good examples of good reviews we have,
-                        <p>the better future reviews will be.
-                        <p>people repeat what they see
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Doing patch reviews</h2>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Finding issues to review</h2>
+                    <h2>Finding issues</h2>
                     <aside class="notes">
                         <p>it is hard to find issues to work on at first, after a few, they chain together and you will be fine.
                     </aside>
                 </section>
 
                 <section>
+                    <h3>Make it easy on yourself</h3>
+                    <h4>Novice</h4>
+                    <h4>Date</h4>
+                    <h4>Status</h4>
+                </section>
+
+                <section>
+                    <h4>first simple! success!</h4>
                     <ul>
-                        <li>first simple! success!</li>
                         <li>novice?</li>
                         <li>initiatives</li>
-                        <li>metas?</li>
                         <li>focus?</li>
+                        <li>tags</li>
+                        <li>pair up</li>
+                        <li>metas?</li>
                     </ul>
                     <aside class="notes">
                         <p>novice
@@ -258,45 +157,62 @@
                 </section>
 
                 <section>
-                    <h2>Doing patch reviews</h2>
+                    <h2>Metas</h2>
+                    <img height="100%" src="hints.png" alt="screenshot of an example issue, 2002650,  with hints">
                     <aside class="notes">
+                        <p>Some times, a whole bunch of related issues have special review instructions.
+                        <p>Like the all the schema, unused var issues. So for ones like that, make a meta to list them all to make it easy to find another once someone reviews one. Also, in the meta, put detailed insructions for what to review and how to review it, link to an example of a good review in one of the issue if one is done already. It’s like summoning any army of reviews to tackle a challenging new task. But once they do it, they can be on a mission and do it over and over.
                     </aside>
                 </section>
 
                 <section>
-                    <h2>Full frontal nicety</h2>
+                    <h4>Up-to-date Issue Summary</h4>
+                </section>
+
+                <section>
+                    <p>https://drupal.org/contributor-tasks/write-issue-summary</p>
+                    <img height="100%" src="template.png" alt="dreditor summary template insert button, and issue summary instructions link">
                     <aside class="notes">
-                        <p>it could be someone's first patch
-                        <p>encourage
-                        <p>support the person who made the patch
-                        <p>and also anyone following the issue or who might come upon the issue in the future
+                        <p>when posting patch, update summary.
+                        <p>Include: steps to test/ steps to reproduce. It should be a numbered list that starts with:
+                        <p>Install drupal8/7/..
+                        <p>get others to do work for you, add the needs issue summary update tag
+                        <p>needs steps to reproduce tag
+                        <p>add a section or update the "remaining tasks" section
                     </aside>
                 </section>
 
                 <section>
-                    <ul>
-                    <h2>Supportive</h2>
-                        <li>specific</li>
-                        <li>include links</li>
-                        <li>support improvement</li>
-                        <li>ask questions</li>
-                        <li>educate</li>
-                    </ul>
+                    <img height="100%" src="contributortasklinks.png" alt="mock up of needs tags linked in context with top of issue">
                     <aside class="notes">
-                        <p>be specific
-                        <p>include links to standards or other docs
-                        <p>support improvement
-                        <p>ask questions
-                        <p>opportunity to educate
+                        <p>So, imagine someone is looking for an issue to review,
+                        <p>they find yours,
+                        <p>it says needs manual testing.
+                        <p>If the issue summary is accurate, and you have steps to reproduce.
+                        <p>Yay! your potential reviewer has not run away yet!
+
+                        <p>Instructions for how to do the review you need will keep them there.
                     </aside>
                 </section>
 
                 <section>
-                    <img height="100%" src="dreditororg.png" alt="screenshot showing new dreditor location and warning to delete before reinstall from there">
-                    <p>http://dreditor.org</p>
+                    <h2>Automatic instructions</h2>
+                    <p>work in progress at</p>
+                    <p>https://drupal.org/node/2013222</p>
+                </section>
+
+                <section>
+                    <h2>Contributor task documents</h2>
+                    <p>http://drupal.org/contributor-tasks/review</p>
+                    <p>http://drupal.org/contributor-tasks/do-accessibility-review</p>
                     <aside class="notes">
-                        <p>reviewers will want this tool. browser plugin dreditor.
-                        <p>remove old one, then install from here.
+                        <p>Keep them there by....
+                        <p>adding a link to the contributor task document that has instructions for the reviewer, so they will know how to do a good review.
+
+                        <p>Now your reviewer that found your issue will have the resources they need to
+                        <p>succeed at doing the review!
+                        <p>And they’ll do a great review too!
+                        <p>the contributor task documents for how to do a review will get meaningful actionable feedback on the patch.
                     </aside>
                 </section>
 
@@ -309,22 +225,6 @@
                         <p>if not, tag it needs issue summary update
                         <p>make a comment about what was confusing or preventing your from reviewing
                         <p>and pick a different issue.
-                    </aside>
-                </section>
-
-                <section>
-                    <img height="100%" src="description.png" alt="screenshot of 2030123 showing problem description with urls and screenshot of the problem">
-                    <aside class="notes">
-                        <p>if it effects the ui, there might be a screenshot of the problem
-                        <p>there might be listed urls where to see the problem
-                    </aside>
-                </section>
-
-
-                <section>
-                    <img height="100%" src="steps.png" alt="screenshot of 1908440 showing problem with steps to reproduce">
-                    <aside class="notes">
-                        <p>or steps to reproduce
                     </aside>
                 </section>
 
@@ -351,33 +251,9 @@
                 </section>
 
                 <section>
-                    <img height="100%" src="jing.png" alt="screenshot of screenshot tool jing :)">
-                    <aside class="notes">
-                        <p>install, follow the steps to reproduce, if ui, can screenshot
-                        <p>so there is a recent before picture for the issue summary.
-                    </aside>
-                </section>
-
-                <section>
                     <img height="100%" src="mostrecent.png" alt="screenshot of an issue with a lot of patches, scroll for most recent patch">
                     <aside class="notes">
                         <p>there may be more than one patch. pick the most recent
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Does it work?</h2>
-                    <ul>
-                        <li>fixes the issue</li>
-                        <li>stays in scope</li>
-                        <li>no regressions</li>
-                    </ul>
-                    <aside class="notes">
-                        <p>fixes the issue
-                        <p>(and not other issues, not break other stuff, bot)
-                        <p>does not stray from scope
-                        <p>(unrelated fixes for coding standards
-                        <p>does not introduce regressions
                     </aside>
                 </section>
 
@@ -413,85 +289,6 @@
                 </section>
 
                 <section>
-                    <h3>Edit</h3>
-                    <img height="90%" src="editissue.png" alt="screenshot showing write up in an issue comment descripting how tested without patch to reproduce and with patch, the results">
-                    <aside class="notes">
-                        <p>to post your review, you might just comment, but it is more usual
-                        to edit. Usually there is more to do to the issue than just comment,
-                        like change a status, change tags, add files, update issue summary.
-                        </p>
-                    </aside>
-                </section>
-
-                <section>
-                    <img height="90%" src="sayhow.png" alt="screenshot showing write up in an issue comment descripting how tested without patch to reproduce and with patch, the results">
-                    <aside class="notes">
-                        <p>say how verified it existed before, list steps.
-                        <p>say tried patch (sometimes say which patch you tried)
-                        <p>write up results how it is different with the patch.
-                    </aside>
-                </section>
-
-                <section>
-                    <img height="90%" src="addfile.png" alt="screenshot showing write up in an issue comment descripting how tested without patch to reproduce and with patch, the results">
-                    <aside class="notes">
-                        <p>if there is a change in the ui, show it.
-                        <p>add files down below
-                        <p>copy link address</p>
-                    </aside>
-                </section>
-
-                <section>
-                    <img height="100%" src="embed.png" alt="screenshot showing write up in an issue comment descripting how tested without patch to reproduce and with patch, the results">
-                    <aside class="notes">
-                        <p>embed
-                        <p>.
-                        <p>automated tests on the testbot help, if good green.
-                        <p>but we do not have complete test coverage.
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Does it make sense?</h2>
-                    <ul>
-                        <li>readable?</li>
-                        <li>comments?</li>
-                        <li>is there a better way?</li>
-                    </ul>
-                    <aside class="notes">
-                        <p>(can we re-use api's instead of create custom code)
-                        <p>have you thought of doing it ... this way?
-                        <p>a question is a nice way to bring up the topic.
-                    </aside>
-                </section>
-
-                <section>
-                    <img height="100%" src="dreditorreview.png" alt="if click the dreditor review next to patch, end up on the screenshot'd page with git diff highlighing and files list, with diff stats">
-                    <aside class="notes">
-                        <p>dreditor review button
-                        <p>diff stat
-                        <p>scroll, files and functions
-                        <p>inserted lines in green
-                        <p>deleted red
-                        <p>comments green
-                        <p>click to select lines, yellow
-                        <p>opens box to type comments
-                        <p>save
-                        <p>paste
-                        <p>if bug or new functionality check for added tests
-                    </aside>
-                </section>
-
-                <section>
-                    <img height="100%" src="dreditoroutput.png" alt="after selecting and saving comments, shows paste into issue comment with html to have ordered list on the bits entered in dreditor">
-                    <aside class="notes">
-                        <p>say what kind of review done. what kind is needed yet.
-                        <p>number your points
-                        <p>include references to other examples or standards
-                    </aside>
-                </section>
-
-                <section>
                     <h3>Strategy</h3>
                     <h4>Scale</h4>
                     <ul>
@@ -502,188 +299,6 @@
                         <p>Too much to review!
                         <p>in your comment, say what you reviewed and how (tool used, steps)
                         <p>(scales, because with documented steps to reviewing an issue, others can come by the issue and help review it if you get too busy.)
-                    </aside>
-                </section>
-                <section>
-                    <h3>Strategy</h3>
-                    <h4>Kinds of reviews</h4>
-                    <ul>
-                        <li>update the issue summary</li>
-                        <li>update needs tags</li>
-                    </ul>
-                    <aside class="notes">
-                        <p>update the issue summary to say what kind of review was done and the comment number
-                        <p>add or remove needs tags, needs manual testing, needs architectural review, needs tests, needs screenshot, needs issue summary update
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Process</h2>
-                    <ul>
-                        <li>cannot unread</li>
-                        <li>perfect is enemy of good</li>
-                    </ul>
-                    <aside class="notes">
-                        <p>You cannot un-read the issue, sometimes read the patch first to see if it makes sense
-                        <p>Perfect is the enemy of good ... for nits, just fix the nits, do review separate
-                        <p>You will find a process you like, these demos give a starting point and inspiration
-
-                    </aside>
-                </section>
-
-                <section>
-
-                    <section>
-                        <img height="100%" src="min.png" alt="shows core gates page list of gates and where it links to the miniumal needed">
-                    <aside class="notes">
-                        <p>http://drupal.org/core-gates
-
-                        <p>for example in docs, outlines minimal, nits not block core commits.
-                    </aside>
-                    </section>
-
-                    <section>
-                        <h3>documentation</h3>
-                        <ul>
-                            <li>issue summary</li>
-                            <li>time</li>
-                            <li>in-code API docs (1354)</li>
-                            <li>hook_help()</li>
-                            <li>change records</li>
-                        </ul>
-                        <p>http://drupal.org/list-changes/drupal</p>
-                        <aside class="notes">
-                            <p>issue summary, place to put some info from core gates review
-                            <p>takes time, really rewarding, saves other patch contributors, reviews, committers time!
-                            <p>in-code API docs (1354), read, then use to identify blocking concerns, let others go (or provide your own patch to fix up non-blocking) (show putting on dashboard) api.drupal.org, and ides (like phpstorm)
-                            <p>module.api.php? core-gates says when
-                            <p>hook_help() adding a new module: ET
-                            <p>change records, for api changes
-                            <p>http://drupal.org/list-changes/drupal (listed here because helps to be familiar to identify needs work, and reference CR)
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Performance</h2>
-                        <ul>
-                            <li>Don't guess</li>
-                            <li>profile!</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>read the core gate, document, don't guess
-                            <p>profile, yourself or mark it needs profiling with tag and contributor task
-                            <p>[fill in detail?] sql queries, caches, memory usage, cpu, system calls, front-end
-                            <p>contributor task for profiling
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Accessibility</h2>
-                        <ul>
-                            <li> bug</li>
-                            <li>                    WCAG</li>
-                            <li>                    ATAG</li>
-                            <li>                    text color contrast</li>
-                            <li>                    form fields are labeled</li>
-                            <li>                    keyboard-usable (javascript)</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>it's a bug
-                            <p>conforms to WCAG 2.0
-                            <p>ATAG 2.0
-                            <p>run a tool that gives output
-                            <p>text color contrast
-                            <p>form fields are labeled
-                            <p>keyboard-usable (javascript)
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Usability</h2>
-                        <ul>
-                            <li>UI changes need usability review</li>
-                            <li>before and after screenshots</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>UI changes undergo usability review.
-                            <p>provide before and after screenshots
-                            <p>acknowlege a change in the UI, tag usabilty, for hard things: needs usability review
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Testing</h2>
-                        <ul>
-                            <li>check coverage</li>
-                            <li>ask for new tests</li>
-                            <li>verify tests-only fails</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>check test coverage & ensure tests pass
-                            <p>ask for add new tests
-                            <p>verify uploaded a test case that fails (for bugs)
-                            <p>pink green
-                            <p>manually test and provide screenshots
-                            <p>watch for tests being changed, ask why
-                            <p>fix bug and prove test coverage, so bug does not sneek in next time.
-                            <p>steps are given to manually test javascript (there are not yet automated tests for javascript)
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Coding Style</h2>
-                        <ul>
-                            <li>no tabs, trailing</li>
-                            <li>1354</li>
-                            <li>link! to docs</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>no tabs or trailing white space, 2 spaces, no tabs
-                            <p>link
-                            <p>docs style
-                            <p>1354
-                        </aside>
-                    </section>
-                </section>
-
-                <section>
-                <h4>drupal.org/documentation/git/interdiff</h4>
-                <img width="70%" src="interdiff.png" alt="screenshot of interdiff in an issue">
-                </section>
-
-                <section>
-                    <h3>Read and check</h3>
-                    <ul>
-                        <li>concerns?</li>
-                        <li>addressed?</li>
-                    </ul>
-                    <aside class="notes">
-                        check if previous concerns are now addressed, or if some are outstanding still, note them.
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>read, read, read</h2>
-                    <ul>
-                        <li>fix simple</li>
-                        <li>for scope</li>
-                        <li>for understanding</li>
-                    </ul>
-                    <aside class="notes">
-                        <p>read once, fix simple
-                        <p>read again for scope
-                        <p>read again for making sense
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>IDE</h2>
-                    <img width="100%" src="ide.png" alt="screenshot showing phpstorm identify a function that is deprecated">
-                    <aside class="notes">
-                        <p>PhpStorm
-                        <p>sometimes see code in context, apply the patch, then open IDE next to the patch/dreditor
-                        <p>unused variables
-                        <p>depreciated api
                     </aside>
                 </section>
 
@@ -702,8 +317,7 @@
                 <section>
                     <h3>Resources</h3>
                     <ul>
-                        <li>drupal.org/contributor-tasks/review</li>
-                        <li>xjm.drupalgardens.com/review-guide</li>
+                        <li>drupal.org/contributor-tasks</li>
                     </ul>
                 </section>
 
@@ -715,7 +329,8 @@
                         <li>drupical.com</li>
                     </ul>
                     <aside class="notes">
-                        dev days szeged, March 24-30 in Hungary
+                        austin
+                        twin cities
                     </aside>
                 </section>
 
