@@ -1,0 +1,8 @@
+Notes for reviewers
+The participant should:
+
+Reproduce the issue before applying the patch.
+Test after applying the patch to verify the fix.
+Document the exact steps used to test the patch (a numbered list).
+Indicate which browser/version and theme were used for testing.
+Attach screenshots to the comment (cropped to only the relevant portion of the screen and embedded with an tag).

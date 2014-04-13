@@ -1,0 +1,5 @@
+Notes for reviewers
+Compare the diffstat with the 8.x patch to double-check for missing hunks.
+Search the change notifications for changes between D7 and D8.
+Backports of bugfixes should be uploaded with a test-only patch followed by a combined patch.
+Keep an eye out for API, UI, and string changes.
