@@ -38,7 +38,7 @@
 			<div class="slides">
 
 				<section>
-					<h1>Patch Reviews</h1>
+					<h1>Let others work on the issue you care about</h1>
 					<p><small>Thanks ZenDoodles and xjm</small></p>
 				</section>
 
@@ -46,18 +46,13 @@
                     <h1>YesCT</h1>
 					<h3>Cathy Theys</h3>
                     <h4>@YesCT</h4>
-                    <h4>Cheppers, Gittip</h4>
-                    <p>I review patches, mostly for core these days.</p>
-                    <p>And do other stuff like plan sprints and mentor.</p>
+                    <h4>BlackMesh</h4>
+                    <h4></h4>
+                    <p>I review and work on patches for Drupal 8 core.</p>
+                    <p>And plan sprints and mentor.</p>
 
 					<aside class="notes">
-                        <p>I'm</p>
-                        <p>Cheppers and gittip</p>
-                        <p>I review patches, mostly for core these days.
-                        <p>I used to only know how to look for one or two common patterns of mistakes in code,
-                        <p>but the more reviews I do, the more I learn how to do more kinds of reviews.
-                        <p>I learn a lot by doing a review, and then watching what feedback others leaveof the same issue.
-                        <p>I also learn how to do reviews by writing patches, and seeing what feedback I get.
+                        <p>I spend a lot of time managing issues and helping other people find issues to work on and work on issues.</p>
  					</aside>
 				</section>
 
@@ -75,35 +70,12 @@
                 </section>
 
                 <section>
-                    <img width="75%" src="needreview1426.png" alt="pie chart showing 1516 issues need review, 20%">
-                    <aside class="notes">
-                        <p>1426, 19% 1516, of 7.4k open not fixed issues (20% down from july 2013, up from may 2013 1309, 18%)
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Getting patch reviews</h2>
-                    <h4>Also: how to find reviews</h4>
-                </section>
-
-                <section>
-                    <h2>Be specific,</h2><h2>what kind of review?</h2>
-                    <aside class="notes">
-                        <p>Patch producer:
-                        <p>In the comment when posting the patch
-                        <p>“this patch is just to demonstrate the approach, it is not ready for a code review. Please try it manually to see if it works and also give feedback on the architecture.”
-                        <p>“this patch is ready for testing, code review and accessibility testing”
-                        <p>“this patch is ready for testing, be sure to test in both IE and safari”
-                    </aside>
-                </section>
-
-                <section>
                     <h2>Use tags</h2>
                     <ul>
                         <li>needs JavaScript review</li>
-                        <li>needs architectural review,
-                        <li>needs usability review,
-                        <li>needs manual testing,
+                        <li>needs architectural review
+                        <li>needs usability review
+                        <li>needs manual testing
                         <li>needs screenshot
                     </ul>
                     <aside class="notes">
@@ -121,6 +93,18 @@
                         <p>get others to do work for you, add the needs issue summary update tag
                         <p>needs steps to reproduce tag
                         <p>add a section or update the "remaining tasks" section
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Be specific,</h2><h2>what needs to be done?</h2>
+                    <aside class="notes">
+                        <p>do not know? ask. guess better.</p>
+                        <p>Patch producer:
+                        <p>In the comment when posting the patch
+                        <p>“this patch is just to demonstrate the approach, it is not ready for a code review. Please try it manually to see if it works and also give feedback on the architecture.”
+                        <p>“this patch is ready for testing, code review and accessibility testing”
+                        <p>“this patch is ready for testing, be sure to test in both IE and safari”
                     </aside>
                 </section>
 
@@ -168,15 +152,6 @@
                 </section>
 
                 <section>
-                    <h2>simplytest.me url</h2>
-                    <h4>pattern is:</h4><h3>/project/drupal/8.x?patch[]=</h3>
-                    <p>http://simplytest.me/qa#developers</p>
-                    <aside class="notes">
-                        <p>this is really nice for accessibility testing, because those testers may not have dreditor installed where they are doing the testing, so they dont have the simplytest.me button on d.o like you might have.
-                    </aside>
-                </section>
-
-                <section>
                     <h2>Give good reviews</h2>
                     <aside class="notes">
                         <p>the more good examples of good reviews we have,
@@ -186,13 +161,7 @@
                 </section>
 
                 <section>
-                    <h2>Doing patch reviews</h2>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-                <section>
-                    <h2>Finding issues to review</h2>
+                    <h2>Finding issues</h2>
                     <aside class="notes">
                         <p>it is hard to find issues to work on at first, after a few, they chain together and you will be fine.
                     </aside>
@@ -258,7 +227,8 @@
                 </section>
 
                 <section>
-                    <h2>Doing patch reviews</h2>
+                    <h2>Bringing people into your issue</h2>
+                    <h2>getting them to stay</h2>
                     <aside class="notes">
                     </aside>
                 </section>
@@ -499,14 +469,13 @@
                         <li>say how</li>
                     </ul>
                     <aside class="notes">
-                        <p>Too much to review!
+                        <p>Too much to do!
                         <p>in your comment, say what you reviewed and how (tool used, steps)
                         <p>(scales, because with documented steps to reviewing an issue, others can come by the issue and help review it if you get too busy.)
                     </aside>
                 </section>
                 <section>
                     <h3>Strategy</h3>
-                    <h4>Kinds of reviews</h4>
                     <ul>
                         <li>update the issue summary</li>
                         <li>update needs tags</li>
@@ -518,11 +487,7 @@
                 </section>
 
                 <section>
-                    <h2>Process</h2>
-                    <ul>
-                        <li>cannot unread</li>
-                        <li>perfect is enemy of good</li>
-                    </ul>
+                    <h2>perfect is enemy of good</h2>
                     <aside class="notes">
                         <p>You cannot un-read the issue, sometimes read the patch first to see if it makes sense
                         <p>Perfect is the enemy of good ... for nits, just fix the nits, do review separate
@@ -541,110 +506,6 @@
                         <p>for example in docs, outlines minimal, nits not block core commits.
                     </aside>
                     </section>
-
-                    <section>
-                        <h3>documentation</h3>
-                        <ul>
-                            <li>issue summary</li>
-                            <li>time</li>
-                            <li>in-code API docs (1354)</li>
-                            <li>hook_help()</li>
-                            <li>change records</li>
-                        </ul>
-                        <p>http://drupal.org/list-changes/drupal</p>
-                        <aside class="notes">
-                            <p>issue summary, place to put some info from core gates review
-                            <p>takes time, really rewarding, saves other patch contributors, reviews, committers time!
-                            <p>in-code API docs (1354), read, then use to identify blocking concerns, let others go (or provide your own patch to fix up non-blocking) (show putting on dashboard) api.drupal.org, and ides (like phpstorm)
-                            <p>module.api.php? core-gates says when
-                            <p>hook_help() adding a new module: ET
-                            <p>change records, for api changes
-                            <p>http://drupal.org/list-changes/drupal (listed here because helps to be familiar to identify needs work, and reference CR)
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Performance</h2>
-                        <ul>
-                            <li>Don't guess</li>
-                            <li>profile!</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>read the core gate, document, don't guess
-                            <p>profile, yourself or mark it needs profiling with tag and contributor task
-                            <p>[fill in detail?] sql queries, caches, memory usage, cpu, system calls, front-end
-                            <p>contributor task for profiling
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Accessibility</h2>
-                        <ul>
-                            <li> bug</li>
-                            <li>                    WCAG</li>
-                            <li>                    ATAG</li>
-                            <li>                    text color contrast</li>
-                            <li>                    form fields are labeled</li>
-                            <li>                    keyboard-usable (javascript)</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>it's a bug
-                            <p>conforms to WCAG 2.0
-                            <p>ATAG 2.0
-                            <p>run a tool that gives output
-                            <p>text color contrast
-                            <p>form fields are labeled
-                            <p>keyboard-usable (javascript)
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Usability</h2>
-                        <ul>
-                            <li>UI changes need usability review</li>
-                            <li>before and after screenshots</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>UI changes undergo usability review.
-                            <p>provide before and after screenshots
-                            <p>acknowlege a change in the UI, tag usabilty, for hard things: needs usability review
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Testing</h2>
-                        <ul>
-                            <li>check coverage</li>
-                            <li>ask for new tests</li>
-                            <li>verify tests-only fails</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>check test coverage & ensure tests pass
-                            <p>ask for add new tests
-                            <p>verify uploaded a test case that fails (for bugs)
-                            <p>pink green
-                            <p>manually test and provide screenshots
-                            <p>watch for tests being changed, ask why
-                            <p>fix bug and prove test coverage, so bug does not sneek in next time.
-                            <p>steps are given to manually test javascript (there are not yet automated tests for javascript)
-                        </aside>
-                    </section>
-
-                    <section>
-                        <h2>Coding Style</h2>
-                        <ul>
-                            <li>no tabs, trailing</li>
-                            <li>1354</li>
-                            <li>link! to docs</li>
-                        </ul>
-                        <aside class="notes">
-                            <p>no tabs or trailing white space, 2 spaces, no tabs
-                            <p>link
-                            <p>docs style
-                            <p>1354
-                        </aside>
-                    </section>
-                </section>
 
                 <section>
                 <h4>drupal.org/documentation/git/interdiff</h4>
@@ -677,29 +538,6 @@
                 </section>
 
                 <section>
-                    <h2>IDE</h2>
-                    <img width="100%" src="ide.png" alt="screenshot showing phpstorm identify a function that is deprecated">
-                    <aside class="notes">
-                        <p>PhpStorm
-                        <p>sometimes see code in context, apply the patch, then open IDE next to the patch/dreditor
-                        <p>unused variables
-                        <p>depreciated api
-                    </aside>
-                </section>
-
-                <section>
-                    <h3>Resources</h3>
-                        <p>drupalize.me/guides/drupal-community-tools-and-core-mentoring</p>
-                        <img width="80%" src="tools.png" alt="screenshot of the drupalize.me community tools ciriculum">
-                </section>
-
-                <section>
-                    <h3>Resources</h3>
-                        <p>drupalladder.org/</p>
-                    <img width="60%" src="ladder.png" alt="screenshot showing ladder site">
-                </section>
-
-                <section>
                     <h3>Resources</h3>
                     <ul>
                         <li>drupal.org/contributor-tasks/review</li>
@@ -713,6 +551,8 @@
                         <li>drupal mentoring office hours</li>
                         <li>#drupal-contribute</li>
                         <li>drupical.com</li>
+                        <li>http://2014.tcdrupal.org/sprints
+                        <br>Sunday 9:30am at the Nerdery</li>
                     </ul>
                     <aside class="notes">
                         dev days szeged, March 24-30 in Hungary
