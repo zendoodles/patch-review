@@ -1,0 +1,8 @@
+Notes for reviewers
+Issue summaries should use the standard template.
+You should be able to understand the issue and its current status after reading the summary.
+The summary should use short, clear sentences.
+It should use markup for better readability (lists, code snippets, subheaders, etc.).
+It should Identify the key points rather than quoting whole paragraphs.
+It can include links to particular comments if necessary, but should not only link those comments.
+The UI and API changes sections can be left as "TBD"; file followup tasks for documenting these.

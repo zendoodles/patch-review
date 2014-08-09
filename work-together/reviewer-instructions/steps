@@ -1,0 +1,4 @@
+Notes for reviewers
+The STR should be in a numbered list.
+Ideally, the STR should start from (e.g.) "Install Drupal 8.x with the standard profile."
+If the participant cannot reproduce the issue, he/she should leave a comment on the issue listing the STR he tried and add that those steps do not reproduce it.
